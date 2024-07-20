@@ -7,7 +7,7 @@ from tqdm import tqdm # indicate progression degree module
 resize_degree = 1
 
 def pixel_transparency(imgPath):
-	img = Image.open("/content/images.jpg")
+	img = Image.open(imgPath)
 
 	img = img.resize((int(img.size[0]*(resize_degree)), int(img.size[1]*(resize_degree))))
 
